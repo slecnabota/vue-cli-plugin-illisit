@@ -13,9 +13,12 @@
   "main": "index.js",
   "dependencies": {
     "core-js": "^3.8.3",
+    "illisit": "file:../illisit",
+    "illisit-form": "file:../illisit-form",
     "imask": "^7.1.3",
     "lodash": "^4.17.21",
-    "vue": "^3.2.13"
+    "vue": "^3.3.6",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -38,7 +41,9 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars": "off"
+    }
   },
   "browserslist": [
     "> 1%",

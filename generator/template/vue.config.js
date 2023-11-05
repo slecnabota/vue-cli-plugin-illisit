@@ -4,11 +4,15 @@ module.exports = {
     assetsDir: 'assets',
     lintOnSave: false,
     configureWebpack: {
+      resolve: {
+        alias: {
+          vue: 'vue/dist/vue.esm-bundler.js',
+        },
+      },
       devtool: 'source-map',
     },
     transpileDependencies: [
     ],
-    
     chainWebpack: (config) => {
       config.entry('app')
         .clear()
